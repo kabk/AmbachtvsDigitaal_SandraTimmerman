@@ -1,0 +1,314 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+	margin:0;
+	
+	font-family: 'Signika', sans-serif;
+	font-weight:400;
+}
+
+/* maak safari browser een kleurtje bij scroll */
+/*.safaritransparent{
+	height:200px;
+	background-color:#ff8a8c;
+	width:100%;
+	position:fixed;
+	top:-150px;
+	z-index:-3;
+}*/
+
+/* houder waar alles in staat */
+.wrapper{
+	max-width:800px;
+
+	margin-left: auto ;
+	margin-right: auto ;
+	padding-top:150px;
+	padding-bottom:550px;
+	padding-left:20px;
+	padding-right:20px;
+	
+	color:#191919;
+	text-align:center;
+	
+	float:none;
+}
+
+/* geef standaard waarde aan afbeeldingen mee */
+img{
+	margin-top:20px;
+	margin-bottom:10px;
+	
+	height:auto; 
+	width:600px;
+
+	overflow:hidden;
+	
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);
+	
+	margin-left:-80px;
+
+}
+img:hover{
+	-webkit-filter: grayscale(0%);
+	-moz-filter: grayscale(0%);
+	filter: grayscale(0%);
+ }
+
+/* maak een 'timeline' */
+#progress{
+	/*background-color:#C6A31F;*/
+	background-color:/*rgba(198,163,31,0.98);*/rgba(41,224,162,0.95);
+	display:block;
+    width:100%;
+	position:fixed;
+	top:0px;
+	height:50px;
+	
+	/* bovenop maar toch klikbaar */
+	z-index:1;
+	pointer-events: none;
+	
+	overflow:hiden;
+}
+
+/* hoofdstuk nummers in de timeline */
+.chapters{
+	text-align:left;
+	color:rgba(41,224,162,0.95);
+	
+	min-width:25px;
+/*	margin-top:20px;*/
+	margin-left:10px;
+}
+.chapter{
+	position:fixed;
+}
+#chapterone{
+	top:78px;
+}
+#chaptertwo{
+	top:180px;
+}
+#chapterthree{
+	top:490px;
+}
+
+
+/* notities maken die gecentreerd rechts staan */
+.outernote {
+    display: table;
+    position: fixed;
+	
+	right:20px;
+	
+    height: 100%;
+    width: 200px;
+	
+	z-index:2;
+}
+
+.middlenote {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+/* styling van de notities zelf */
+.note{
+    margin-left: auto;
+    margin-right: auto; 
+	
+	position: absolute;
+	
+	font-size:13px;
+	line-height:1.5;
+		
+	padding-right:15px;
+	display:none;
+	
+	margin-top:-50px;
+	
+	text-wrap:unrestricted;
+	overflow:inherit;
+	max-width: 180px;
+
+	white-space: pre-wrap;      /* CSS3 */   
+	white-space: -moz-pre-wrap; /* Firefox */    
+	white-space: -pre-wrap;     /* Opera <7 */   
+	white-space: -o-pre-wrap;   /* Opera 7 */    
+	word-wrap: break-word;      /* IE */
+}
+
+.imagenote{
+	margin-left: auto;
+    margin-right: auto; 
+	
+	position: absolute;
+	
+	font-size:13px;
+	line-height:1.5;
+		
+	padding-right:15px;
+	display:none;
+	
+	margin-top:-50px;
+	
+	text-wrap:unrestricted;
+	overflow:inherit;
+	max-width: 180px;
+
+	white-space: pre-wrap;      /* CSS3 */   
+	white-space: -moz-pre-wrap; /* Firefox */    
+	white-space: -pre-wrap;     /* Opera <7 */   
+	white-space: -o-pre-wrap;   /* Opera 7 */    
+	word-wrap: break-word;      /* IE */
+}
+
+
+
+/* title */
+.title{
+	font-size:36px;
+	font-weight:bold;
+	text-align:left;
+	margin-top:200px;
+}
+.subtitle{
+	font-size:34px;
+	font-weight:lighter;
+	text-align:left;
+	margin-bottom:200px;
+}
+
+.vraag{
+	font-size:19px;
+	line-height:30px;
+	margin-bottom:100px;
+	font-weight:600;
+}
+
+
+/* typografie kopjes */
+h1{
+	font-size:24px;
+	text-transform:uppercase;
+	padding-top:100px;
+	margin-bottom:-20px;
+	
+	margin-left:-40px;
+}
+
+/* typografie sub-kopjes */
+h2{
+	font-size:19px;
+	text-transform:uppercase;
+	
+	margin-left:-20px;
+}
+
+h3{
+	font-weight:bold;
+}
+
+/* typografie platte tekst */
+.txt{
+	font-size:19px;
+	line-height:1.7;
+	text-align:left;
+		
+	margin-left: auto ;
+	margin-right: auto ;
+	
+	max-width:600px;
+	min-width:280px;
+}
+
+quote{
+	font-weight:bold;	
+}
+
+intro{
+	font-style:italic;
+}
+
+/* typografie onderschriften */
+.afbeeldingbijschrift{
+	font-size:13px;
+	max-width:500px;
+	padding-bottom:50px;
+}
+
+/* typografie footnotes */
+.footnote{
+	color:#006460;
+	cursor:pointer;
+	vertical-align: super;
+	font-weight:bold;
+
+	font-size:12px;
+	border-top:2px solid #006460;
+	padding-right:5px;
+	padding-left:5px;
+	background-color:#dffff4;
+}
+
+
+/* hidden message */
+.author{	
+	position: relative;
+	color:white;
+	width:100%;
+	bottom:0;
+	
+	text-align:center;
+	padding:10px 0 10px 0;
+	
+	z-index:3;
+}
+
+.spacer{
+	height:1000px;
+}
+
+a{
+	color:#006460;
+}
+
+
+
+/* fix voor kleinre schermen */
+@media (max-width: 1024px) {
+.note {
+	position: fixed;
+	bottom:0px;
+	left:0px;
+	width:90%;
+	
+	padding:40px;
+	
+	background-color:rgba(240,240,240,0.9);
+}
+
+img{
+	margin-left: auto ;
+	margin-right: auto ;
+	margin-top:20px;
+	margin-bottom:10px;
+	
+	height:auto; 
+	max-width:100%;
+	max-height:600px;
+	
+	overflow:hidden;
+	
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	filter: grayscale(100%);	
+}
+h1{
+	margin-left:0px;
+}
+
+}	
